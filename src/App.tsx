@@ -15,6 +15,7 @@ import StatsGridBefore from './features/statsGrid_before/StatsGrid';
 import StatsGridAfter from './features/statsGrid_test/StatsGrid';
 import AlertBannerBefore from './features/alertBanner_before/AlertBanner';
 import AlertBannerAfter from './features/alertBanner_test/AlertBanner';
+import { Changelog } from './components/Changelog';
 import './App.css';
 
 // Example data - showing UserDashboard conversion
@@ -199,7 +200,7 @@ function App() {
                 </a>
               </div>
               <p className="lead text-muted">
-                Automated conversion tool with SCSS mixins and semantic selectors
+                Convert Tailwind & Bootstrap to CSS Modules â€¢ Supports .tsx, .jsx, .js â€¢ Config file support
               </p>
               <div className="d-flex justify-content-center gap-3 mb-3 align-items-center flex-wrap">
                 <span className="badge bg-success">1.6s conversion time</span>
@@ -274,6 +275,14 @@ function App() {
                 onClick={() => setActiveTab('duplicates')}
               >
                 ï¿½ Duplicate Properties
+            <li>
+              <button 
+                className={`nav-link ${activeTab === 'changelog' ? 'active' : ''}`}
+                onClick={() => setActiveTab('changelog')}
+              >
+                í³‹ Changelog
+              </button>
+            </li>
               </button>
             </li>
           </ul>
@@ -544,6 +553,13 @@ function App() {
             </div>
           )}
           </div>
+          {activeTab === 'changelog' && (
+            <div className="row">
+              <div className="col-12">
+                <Changelog />
+              </div>
+            </div>
+          )}
         </main>
         
         <footer className="text-center mt-4 py-3">

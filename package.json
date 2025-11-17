@@ -34,6 +34,7 @@
     "glob": "^11.0.3",
     "globals": "^16.5.0",
     "sass-embedded": "^1.93.3",
+    "style-converter": "^1.1.0",
     "ts-node": "^10.9.2",
     "tsx": "^4.20.6",
     "typescript": "~5.9.3",
