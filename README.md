@@ -1,6 +1,8 @@
 # Style Converter
 
-Convert CSS framework classes (Tailwind CSS or Bootstrap) in React TSX files to modular SCSS with semantic selectors.
+🎨 Convert CSS framework classes (Tailwind CSS or Bootstrap) in React TSX files to modular SCSS with semantic selectors.
+
+**[🚀 Live Demo](https://styleconverter.netlify.app/)** | **[📦 NPM Package](https://www.npmjs.com/package/style-converter)**
 
 ## Background
 
